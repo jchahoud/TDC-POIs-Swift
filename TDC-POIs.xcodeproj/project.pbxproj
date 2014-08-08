@@ -12,6 +12,8 @@
 		245606D8198583C400716FBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 245606D6198583C400716FBF /* Main.storyboard */; };
 		245606DA198583C400716FBF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 245606D9198583C400716FBF /* Images.xcassets */; };
 		245606E6198583C400716FBF /* TDC_POIsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245606E5198583C400716FBF /* TDC_POIsTests.swift */; };
+		245606F41985845800716FBF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 245606F31985845800716FBF /* MapKit.framework */; };
+		2485441D198FCCF4005277E5 /* TDCAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2485441C198FCCF4005277E5 /* TDCAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,8 @@
 		245606DF198583C400716FBF /* TDC-POIsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TDC-POIsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		245606E4198583C400716FBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		245606E5198583C400716FBF /* TDC_POIsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDC_POIsTests.swift; sourceTree = "<group>"; };
+		245606F31985845800716FBF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		2485441C198FCCF4005277E5 /* TDCAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDCAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				245606F41985845800716FBF /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				245606CF198583C400716FBF /* TDC-POIs */,
+				245606F31985845800716FBF /* MapKit.framework */,
 				245606E2198583C400716FBF /* TDC-POIsTests */,
 				245606CE198583C400716FBF /* Products */,
 			);
@@ -77,6 +83,7 @@
 			children = (
 				245606D2198583C400716FBF /* AppDelegate.swift */,
 				245606D4198583C400716FBF /* ViewController.swift */,
+				2485441C198FCCF4005277E5 /* TDCAnnotation.swift */,
 				245606D6198583C400716FBF /* Main.storyboard */,
 				245606D9198583C400716FBF /* Images.xcassets */,
 				245606D0198583C400716FBF /* Supporting Files */,
@@ -158,6 +165,11 @@
 				TargetAttributes = {
 					245606CC198583C400716FBF = {
 						CreatedOnToolsVersion = 6.0;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					245606DE198583C400716FBF = {
 						CreatedOnToolsVersion = 6.0;
@@ -210,6 +222,7 @@
 			files = (
 				245606D5198583C400716FBF /* ViewController.swift in Sources */,
 				245606D3198583C400716FBF /* AppDelegate.swift in Sources */,
+				2485441D198FCCF4005277E5 /* TDCAnnotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +410,7 @@
 				245606EB198583C400716FBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		245606EC198583C400716FBF /* Build configuration list for PBXNativeTarget "TDC-POIsTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +419,7 @@
 				245606EE198583C400716FBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
